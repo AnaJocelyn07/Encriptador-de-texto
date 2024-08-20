@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: #f6f6f6;
+    --color-secundario: #0A3871;
+    --color-terciario: #495057;
+    --color-texto: #000000;
+    --color-hover: #272727;
+    --fuente-inter:"Inter", sans-serif;
+    --tamaño-parrafo: 1.8rem;
+}
+
+*{
+    padding:0;
+    margin:0;
+    font-family: var(--fuente-inter)
+}
+
+body{
+    background-color:#E5E5E5;
+    color:var(--color-secundario);
+    box-sizing: border-box;
+}
+
+
+.logo_alura{
+    width: 10%;
+    padding: 2% 2%;
+    
+}
+
+.presentacion{
+    display: flex;
+    /*Margen 7% verticalmente 15% margen horizontal*/
+    justify-content: space-between;
+    gap:10px;
+}
+
+.presentacion__contenido{
+    width:50%;
+    display: flex;
+    padding:0% 15%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto_a_encriptar{
+    display: flex;
+    font-size:1.5rem;
+    font-weight: 400;
+    color: var(--color-secundario);
+    padding: 0% 5% 70% 0%;
+    background-color: #E5E5E5;
+    border: 0px;
+    outline: none;
+}
+
+
+.mensaje_no_encontrado{
+    width: 30%;
+    display: flex;
+    margin:-4% 10% 2% 0%;
+    flex-direction:column;
+    align-items: center;
+    border-radius:8px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    gap: 0px;
+    justify-content: center;
+}
+
+.imagen_muñeco{
+    width: 80%;
+    
+}
+
+.contenido_noencontrado{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    gap: 10px;    
+    padding: 0% 10% 30% 10%;
+    text-align: center;
+}
+
+.titulo_mensaje{
+    font-size:1rem;
+    color: #343A40;
+    font-weight: bold;
+
+}
+
+.ingresa_texto2{
+    font-size:0.75rem;
+    color: #495057;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction:column;
+    color:var(--color-terciario);
+    font-weight:400;
+    font-size: 0.75rem;
+}
+
+.contenido_indicaciones{
+    display:flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.advertencia{
+    display:flex;
+    width: 3%;
+}
+
+.botones_encrip{
+    display: flex;
+    align-items: center;
+    padding: 2% 0%;
+    gap: 20px;
+}
+
+.encriptar{
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    font-weight:400;
+    width: 40%;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius:16px;
+    font-size: 1rem;
+    color:var(--color-primario);
+    text-decoration: none;
+    border: 2px solid var(--color-secundario);
+}
+
+.desencriptar{
+    display: flex;
+    background-color: #D8DFE8;
+    justify-content: center;
+    gap:10px;
+    font-weight:400;
+    width: 40%;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius:16px;
+    font-size: 1rem;
+    color:var(--color-secundario);
+    text-decoration: none;
+    border: 2px solid var(--color-secundario);
+}
+
+.mensaje_encriptado{
+    width: 30%;
+    display: flex;
+    margin:-4% 10% 2% 0%;
+    align-items: center;
+    flex-direction:column;
+    border-radius:8px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 40px;
+}
+
+.texto_encriptado{
+    display: flex;
+    font-size:1.5rem;
+    font-weight: 400;
+    color: var(--color-terciario);
+    padding: 0% 7% 90% 7%;
+    border: 0px;
+    outline: none;
+}
+
+.boton_copiar{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    font-weight:400;
+    width: 40%;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius:16px;
+    font-size: 1rem;
+    color:var(--color-secundario);
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+}
+
+.enlaces:hover{
+    background-color: var(--color-hover);
+}
+
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 10px;
+    color:var(--color-primario);;
+    text-align:center;
+    font-family:var(--fuente-inter);
+    font-size:1rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .header{
+        padding:10%;
+    }
+
+    .presentacion{
+        flex-direction:column;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        margin: 5%;
+        width: auto;
+    }
+  
+    .contenido_noencontrado{
+        padding: 50%;
+        width:auto;
+    }
+    
+
+
+}

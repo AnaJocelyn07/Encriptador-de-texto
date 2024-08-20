@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href = "./styles/style.css">
+</head>
+<body>
+        <img class="logo_alura" src = "./img/Logo.png" alt="Logo de Alura">
+
+    <main class="presentacion">
+
+        <section class="presentacion__contenido">
+            <input type="text" id="texto_encriptar" class="texto_a_encriptar" placeholder="Ingrese el texto aqui" required/>
+            <div class="botones">
+                    <div class="contenido_indicaciones">
+                <img class="advertencia" src ="./img/advertencia.png" alt="Icono de advertencia">
+                <h4 class="contenido_indicaciones_texto">Solo letras minúsculas y sin acentos</h4>
+                    </div>
+                    <div class = "botones_encrip">
+                        <button onclick="encriptar();" class="encriptar">Encriptar</button>
+                        <button onclick="desencriptar();" class="desencriptar">Desencriptar</button>
+                    </div>
+            </div>
+        </section> 
+
+        <section class = "mensaje_encriptado" id="mostrarMensaje" style="display: none;">
+            <p class = "texto_encriptado" id="encriptado" ></p>
+            <button onclick="copiarTexto();" class="boton_copiar">Copiar</button>
+        </section>
+
+        <section class = "mensaje_no_encontrado" id = "mensajeNoEncontrado" style="display:true">
+            <img class="imagen_muñeco" src = "./img/Muñeco.png" alt="Imagen de muñeco buscando">
+            <div class ="contenido_noencontrado">
+                <h2 class="titulo_mensaje">Ningún mensaje fue encontrado</h2>
+                <h3 class="ingresa_texto2">Ingrese el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section> 
+
+        
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Ana Jocelyn</p>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
+<!-- Esto es un comentario y será ignorado -->
